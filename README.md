@@ -1,13 +1,13 @@
-# Traffic Monster — Website
+# Aurion — Website
 
-A fast, responsive, multi-page static website for **Traffic Monster** (trafficmonster.com),
+A fast, responsive, multi-page static website for **Aurion** (auriontechdata.com),
 built with the same information architecture as a traffic-data company site and a subtle
 light-blue theme. Pure HTML/CSS/JS — no build step, no dependencies — so it deploys to any
 static host with automatic HTTPS.
 
 ## Pages
 - `index.html` — Home (hero, who-we-are, services, stats, process, testimonial, CTA)
-- `services.html` — Traffic Data Count · Cyber Security · Software Development
+- `services.html` — Traffic Data Count · Software Development
 - `about.html` — About Us
 - `our-story.html` — Company timeline
 - `insight.html` — Articles / blog grid
@@ -37,17 +37,17 @@ python3 -m http.server 8080
 **Netlify (drag & drop)**
 1. Go to https://app.netlify.com/drop
 2. Drag the whole `Traffic` folder onto the page.
-3. You get a live `https://…netlify.app` URL instantly. Add your `trafficmonster.com`
+3. You get a live `https://…netlify.app` URL instantly. Add your `auriontechdata.com`
    domain under Site settings → Domain management (HTTPS is provisioned automatically).
 
 **GitHub Pages**
 ```bash
 cd /Users/deepakkumar/Desktop/Traffic
-git init && git add . && git commit -m "Traffic Monster site"
-gh repo create trafficmonster --public --source=. --push
+git init && git add . && git commit -m "Aurion site"
+gh repo create aurion --public --source=. --push
 ```
 Then in the repo: Settings → Pages → deploy from `main` / root. Served over HTTPS at
-`https://<user>.github.io/trafficmonster/`.
+`https://<user>.github.io/aurion/`.
 
 **Vercel:** `npx vercel` in this folder, follow the prompts.
 
@@ -55,7 +55,7 @@ Then in the repo: Settings → Pages → deploy from `main` / root. Served over 
 
 ## Customising
 - **Colors:** edit the `--blue-*` variables at the top of `css/style.css`.
-- **Contact/phone/email:** search-replace `info@trafficmonster.com`, `+91 81500 57070`,
+- **Contact/phone/email:** search-replace `info@auriontechdata.com`, `+91 7814270306`,
   and the Bangalore address across the HTML files.
 - **Contact form:** currently a front-end demo. To actually receive messages, point the
   `<form>` at a service like Formspree/Netlify Forms, or your own endpoint.

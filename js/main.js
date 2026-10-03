@@ -1,4 +1,4 @@
-/* Traffic Monster — shared site behaviour */
+/* Aurion — shared site behaviour */
 (function () {
   "use strict";
 
